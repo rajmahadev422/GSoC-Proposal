@@ -191,22 +191,9 @@ Example: `first-project`
 
 :::code
 
-```cpp
-#include <opencv2/opencv.hpp>
-#include <iostream>
+:::include{docs/code/cpp/videocapture_basic.cpp#l8-l55}
 
-int main()
-{
-    std::cout << "OpenCV Version: " << CV_VERSION << std::endl;
-
-    cv::Mat img = cv::Mat::zeros(400, 400, CV_8UC3);
-
-    cv::imshow("OpenCV Test", img);
-    cv::waitKey(0);
-
-    return 0;
-}
-```
+:::include{docs/code/python/videocapture_basic.py}
 
 :::
 
