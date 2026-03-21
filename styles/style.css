@@ -252,6 +252,7 @@ body {
 #app {
   flex: 1;
   overflow-y: auto;
+  scroll-behavior: smooth;
   padding: 48px 64px;
   scrollbar-width: thin;
   scrollbar-color: var(--border) transparent;
@@ -281,6 +282,18 @@ body {
   margin-bottom: 12px;
   margin-top: 40px;
   line-height: 1.2;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+  scrollbar-width: thin;
+}
+
+#app table {
+  width: max-content; /* key line */
+  border-collapse: collapse;
 }
 
 #app table th,
@@ -498,7 +511,7 @@ a {
 
 @media (max-width: 1100px) {
   #app {
-    padding: 36px 36px;
+    padding: 20px;
   }
 }
 
@@ -515,4 +528,36 @@ a {
 
 #overlay.show {
   display: block;
+}
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 10px;
+  text-align: center;
+  background: var(--surface);
+}
+
+.footer-content {
+  align-items: center;
+  gap: 10px;
+}
+
+.footer p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.footer-links a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 14px;
+  transition: color 0.2s ease;
+  font-family: monospace;
+}
+
+.footer-links a:hover {
+  color: var(--text);
+  text-decoration: underline 2px solid var(--text-secondary);
+
 }

@@ -38,7 +38,9 @@ async function init() {
 
   render(ast);
   updateBreadcrumb(page);
+  wrapTables();
 }
+
 window.addEventListener("hashchange", init);
 
 // initial load
@@ -57,6 +59,15 @@ document.addEventListener("click", (e) => {
   }
 });
 
+// ===== TABLE WRAPPER =====
+function wrapTables() {
+  document.querySelectorAll("#app table").forEach((table) => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "table-wrapper";
+    table.parentNode.insertBefore(wrapper, table);
+    wrapper.appendChild(table);
+  });
+}
 // const overlay = document.getElementById("overlay");
 
 // menuBtn.onclick = () => {
