@@ -26,12 +26,12 @@ In this tutorial you will learn how to:
 based on its color. Variation of the saturation goes from unsaturated to represent shades of gray and fully saturated (no white component). Value channel describes the brightness or the intensity of the
 color. Next image shows the HSV cylinder.
 
-![By SharkDderivative work: SharkD [CC BY-SA 3.0 or GFDL], via Wikimedia Commons](docs/images/Threshold_inRange_HSV_colorspace.jpg)
+![By SharkDderivative work: SharkD [CC BY-SA 3.0 or GFDL], via Wikimedia Commons](/docs/images/Threshold_inRange_HSV_colorspace.jpg)
 
 Since colors in the RGB colorspace are coded using the three channels, it is more difficult to segment
 an object in the image based on its color.
 
-![By SharkD [GFDL or CC BY-SA 4.0], from Wikimedia Commons](docs/images/Threshold_inRange_RGB_colorspace.jpg)
+![By SharkD [GFDL or CC BY-SA 4.0], from Wikimedia Commons](/docs/images/Threshold_inRange_RGB_colorspace.jpg)
 
 Formulas used to convert from one colorspace to another colorspace using @ref cv::cvtColor function
 are described in @ref imgproc_color_conversions
@@ -145,6 +145,6 @@ Let's check the general structure of the program:
 
 - As you set the range values from the trackbar, the resulting frame will be visible in the other window.
 
-![r1](docs/images/Threshold_inRange_Tutorial_Result_input.jpeg)
+![r1](/docs/images/Threshold_inRange_Tutorial_Result_input.jpeg)
 
-![r2](docs/images/Threshold_inRange_Tutorial_Result_output.jpeg)
+![r2](/docs/images/Threshold_inRange_Tutorial_Result_output.jpeg)
