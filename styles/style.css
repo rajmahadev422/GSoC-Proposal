@@ -10,19 +10,19 @@
 /* ===== DARK THEME (default) ===== */
 :root,
 [data-theme="dark"] {
-  --bg: #0a0d12;
-  --sidebar-bg: #070a0e;
-  --header-bg: rgba(7, 10, 14, 0.85);
+  --bg: #1e1e1f;
+  --sidebar-bg: #2a2929;
+  --header-bg: rgba(45, 46, 48, 0.85);
   --card: #0d1117;
   --surface: #111820;
   --surface-hover: #161f2a;
   --text: #e6edf3;
   --text-secondary: #8b949e;
-  --text-muted: #484f58;
+  --text-muted: #ffffff;
   --accent: #58a6ff;
   --accent-subtle: rgba(88, 166, 255, 0.08);
   --accent-glow: rgba(88, 166, 255, 0.15);
-  --border: #1c2733;
+  --border: #373b41;
   --border-subtle: #141b22;
   --green: #3fb950;
   --shadow: 0 1px 0 rgba(255, 255, 255, 0.04);
@@ -31,7 +31,7 @@
   --pre-bg: #0d1117;
   --sidebar-width: 272px;
   --header-height: 52px;
-  --radius: 8px;
+  --radius: 4px;
   --radius-sm: 5px;
 }
 
@@ -49,13 +49,13 @@
   --accent: #0969da;
   --accent-subtle: rgba(9, 105, 218, 0.07);
   --accent-glow: rgba(9, 105, 218, 0.15);
-  --border: #d0d7de;
+  --border: #9d9fa2;
   --border-subtle: #e4e9ef;
   --green: #1a7f37;
   --shadow: 0 1px 0 rgba(0, 0, 0, 0.06);
   --inline-code-bg: #f0f3f6;
   --inline-code-color: #c7500a;
-  --pre-bg: #f6f8fa;
+  --pre-bg: #cbcfd4;
 }
 
 /* ===== BODY ===== */
@@ -384,13 +384,13 @@ body {
   border: 1px solid var(--border);
   color: var(--inline-code-color);
   padding: 2px 6px;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 /* ===== CODE TABS ===== */
 .code-container {
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: 4px;
   overflow: hidden;
   background: var(--card);
   margin: 20px 0;
