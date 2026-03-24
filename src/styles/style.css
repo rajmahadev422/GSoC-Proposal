@@ -97,14 +97,14 @@ body {
   align-items: center;
   height: 100%;
   width: 200px;
-  padding: 0 20px;
+  padding: 0 10px;
   gap: 10px;
   border-right: 1px solid var(--border-subtle);
 }
 
 .header-logo {
-  width: 26px;
-  height: 26px;
+  height: 30px;
+  width: 30px;
   background: linear-gradient(135deg, var(--accent), #1f6feb);
   border-radius: 7px;
   display: flex;

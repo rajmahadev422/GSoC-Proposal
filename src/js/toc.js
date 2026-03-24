@@ -17,13 +17,6 @@ menu.className = "toc-menu";
 
 const ul = document.createElement("ul");
 
-const li1 = document.createElement("li");
-li1.textContent = "Table of Contents";
-li1.style.fontWeight = "bold";
-li1.style.cursor = "default";
-
-ul.appendChild(li1);
-
 menu.appendChild(ul);
 tocContainer.appendChild(btn);
 tocContainer.appendChild(menu);
@@ -31,12 +24,13 @@ tocContainer.appendChild(menu);
 /* Default expand */
 btn.classList.add("active");
 menu.classList.add("show");
-autoCloseToc(3000)
+autoCloseToc(5000);
+
 // Toggle
 btn.addEventListener("click", () => {
   btn.classList.toggle("active");
   menu.classList.toggle("show");
-  autoCloseToc(5000)
+  // autoCloseToc(5000);
 });
 
 document.addEventListener("click", (e) => {
@@ -64,7 +58,10 @@ window.addEventListener("DOMContentLoaded", async () => {
     ul.innerHTML = "";
 
     const headers = targetNode.querySelectorAll("h1, h2");
-
+    const li1 = document.createElement("li");
+    li1.textContent = "Table of Contents";
+    li1.classList.add("li1");
+    ul.appendChild(li1);
     headers.forEach((h, idx) => {
       const text = h.innerText.trim();
       if (text !== "") {
@@ -75,6 +72,7 @@ window.addEventListener("DOMContentLoaded", async () => {
 
         const li = document.createElement("li");
         li.textContent = text;
+        li.classList.add('li2');
 
         li.onclick = () => {
           // 2. Now this will find the H1/H2 element, not the LI

@@ -10,7 +10,6 @@
 .toc-btn {
   width: 50px;
   height: 50px;
-  border-radius: 12px;
   border: none;
   background: var(--surface);
   display: flex;
@@ -19,6 +18,7 @@
   align-items: center;
   gap: 5px;
   cursor: pointer;
+  z-index: 101;
 }
 
 /* Lines */
@@ -48,13 +48,19 @@
   right: 0;
   background-color: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 12px;
+  border-radius: 5px;
   overflow-y: auto;
   width: 200px;
+  max-height: 300px;
   opacity: 0;
   transform: translateY(10px);
   pointer-events: none;
   transition: 0.25s;
+  z-index: 100;
+}
+
+.toc-menu::-webkit-scrollbar {
+  display: none;
 }
 
 /* Show */
@@ -71,14 +77,14 @@
   padding: 8px 0;
 }
 
-.toc-menu li {
-  padding: 8px 14px;
+.li2 {
+  padding: 8px;
   font-size: 14px;
   cursor: pointer;
   color: var(--text-secondary);
 }
 
-.toc-menu li:hover {
+.li2:hover {
   background: var(--border);
   color: var(--text);
 }
@@ -86,4 +92,13 @@
 /* Indentation for hierarchy */
 .toc-menu li:nth-child(n) {
   padding-left: 14px;
+}
+
+.li1 {
+  font-weight: bold;
+  border-bottom: 1px solid var(--border);
+  padding: 8px 14px;
+  position: sticky;
+  top: 0;
+  background: var(--surface);
 }
