@@ -24,12 +24,18 @@ function mapLang(lang) {
 }
 
 // Tokenize markdown into blocks and markdown segments
+
+let showToc = false;
+
 async function loadMarkdown(path) {
   try {
     const res = await fetch(`docs/${path}`);
     if (!res.ok) {
-      return `<div> 404 Not Found </div>`;
+      const res = await fetch('src/404.html');
+      showToc = false;
+      return await res.text();
     }
+    showToc = true;
     return await res.text();
   } catch (err) {
     return `<p>${err.message}</p>`;

@@ -1,4 +1,7 @@
 // find all headers in the rendered markdown and store them in an array
+
+if(!showToc) return;
+
 let headersList = [];
 
 // TOC Logic
