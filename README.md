@@ -1,6 +1,6 @@
 # Dev-Doc
 
-[Live](https://rajmahadev422.github.io/Dev-Doc/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Open-blue?style=for-the-badge&logo=vercel&logoColor=white)](https://rajmahadev422.github.io/Dev-Doc/)
 
 A lightweight documentation tool that allows you to embed code snippets and file contents directly into your documentation using custom syntax.
 
