@@ -6,6 +6,10 @@
   z-index: 100;
 }
 
+#toc::-webkit-scrollbar {
+  display: none;
+}
+
 /* Button */
 .toc-btn {
   width: 50px;
